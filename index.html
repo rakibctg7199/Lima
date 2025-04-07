@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ডিপোজিট ফর্ম</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>💳 ডিপোজিট ফর্ম</h2>
+
+    <label>📤 সেন্ড মানি করুন (Send Money):</label>
+    <div class="copy-box">
+      <input type="text" value="01979448661" id="paymentNumber" readonly />
+      <button onclick="copyNumber()">কপি করুন</button>
+    </div>
+
+    <label>📱 আপনার নাম্বার:</label>
+    <input type="tel" placeholder="আপনার বিকাশ নাম্বার লিখুন" required />
+
+    <label>💸 আপনি কত টাকা পাঠিয়েছেন:</label>
+    <input type="number" placeholder="টাকার পরিমাণ লিখুন" required />
+
+    <label>🧾 TRX ID দিন:</label>
+    <input type="text" placeholder="লেনদেন আইডি লিখুন" required />
+
+    <button onclick="submitDeposit()">✅ জমা দিন</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
